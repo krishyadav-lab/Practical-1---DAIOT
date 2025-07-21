@@ -46,13 +46,12 @@ o Write and upload the following code to the Arduino:
 
 
 Part 2: Raspberry Pi Setup
-1. Prepare Raspberry Pi:
-o Insert the microSD card into the Raspberry Pi.
-o Connect the monitor, keyboard, and mouse.
-o Power up the Raspberry Pi and complete the initial setup.
-2. Install Python Serial Library:
-o Open a terminal window on the Raspberry Pi.
-o Install the pyserial library with:
+~ Insert the microSD card into the Raspberry Pi.
+~Connect the monitor, keyboard, and mouse.
+~ Power up the Raspberry Pi and complete the initial setup.
+~. Install Python Serial Library:
+~ Open a terminal window on the Raspberry Pi.
+~ Install the pyserial library with:
 bash
 
 Lab Manual IOT &amp; DA
@@ -64,7 +63,7 @@ sudo apt-get update
 sudo apt-get install python3-serial
 
 #Create Python Script:
-o Create a Python script to read the serial data from Arduino. Open a text editor and
+~Create a Python script to read the serial data from Arduino. Open a text editor and
 write the following script:
 python
 Copy code
@@ -72,8 +71,8 @@ import serial
 # Open serial port
 
 # Run the Script:
-o Save the Python script as read_serial.py.
-o Execute the script by running:
+~ Save the Python script as read_serial.py.
+~ Execute the script by running:
 bash
 Copy code
 python3 read_serial.py
