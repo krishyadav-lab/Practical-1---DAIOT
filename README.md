@@ -1,7 +1,7 @@
 # Practical-1---DAIOT
 Introduction to Arduino and Raspberry Pi.
-1. Aim-- To Study the Arduino and Raspberry Pi.
-2. Theory
+# Aim-- To Study the Arduino and Raspberry Pi.
+# Theory
 Arduino
 Arduino is an open-source electronics platform that provides a simple microcontroller-based
 environment for creating interactive electronic projects. It uses a straightforward programming
@@ -15,24 +15,24 @@ Serial Communication
 Serial communication is a method for transmitting data between devices. Arduino and Raspberry
 Pi can communicate via serial ports, allowing data to be sent and received. This is useful for
 integrating sensor data or control signals between the two platforms.
-3. Materials Required
- Arduino Uno board
- Raspberry Pi (any model)
- USB cable for Arduino
- Breadboard
- Jumper wires
- LED
+#Materials Required
+~ Arduino Uno board
+~Raspberry Pi (any model)
+~ USB cable for Arduino
+~ Breadboard
+~Jumper wires
+~ LED
 
 Lab Manual IOT &amp; DA
 
-7 | Page
+# |Page
 
- 220-ohm resistor
- DHT11 Temperature and Humidity Sensor
- MicroSD card with Raspbian OS (for Raspberry Pi)
- Monitor, keyboard, and mouse (for Raspberry Pi)
-
-4. Procedure
+~ 220-ohm resistor
+~ DHT11 Temperature and Humidity Sensor
+~ MicroSD card with Raspbian OS (for Raspberry Pi)
+~ Monitor, keyboard, and mouse (for Raspberry Pi)
+~
+# Procedure
 Part 1: Arduino Setup
 1. Connect the LED:
 o Place the LED on the breadboard.
