@@ -43,20 +43,7 @@ o Connect the cathode (short leg) to the ground (GND) on the Arduino.
 2. Upload the Arduino Sketch:
 o Open the Arduino IDE on your computer.
 o Write and upload the following code to the Arduino:
-cpp
-Copy code
-void setup() {
-Serial.begin(9600); // Initialize serial communication
-pinMode(9, OUTPUT); // Set pin 9 as output
-}
-void loop() {
-digitalWrite(9, HIGH); // Turn the LED on
-Serial.println(&quot;LED ON&quot;);
-delay(1000); // Wait for a second
-digitalWrite(9, LOW); // Turn the LED off
-Serial.println(&quot;LED OFF&quot;);
-delay(1000); // Wait for a second
-}
+
 
 Part 2: Raspberry Pi Setup
 1. Prepare Raspberry Pi:
@@ -70,45 +57,38 @@ bash
 
 Lab Manual IOT &amp; DA
 
-8 | Page
+#| Page
 
 Copy code
 sudo apt-get update
 sudo apt-get install python3-serial
 
-3. Create Python Script:
+#Create Python Script:
 o Create a Python script to read the serial data from Arduino. Open a text editor and
 write the following script:
 python
 Copy code
 import serial
 # Open serial port
-ser = serial.Serial(&#39;/dev/ttyACM0&#39;, 9600)
-while True:
-try:
-line = ser.readline().decode(&#39;utf-8&#39;).strip()
-print(line)
-except KeyboardInterrupt:
-break
-ser.close()
-4. Run the Script:
+
+# Run the Script:
 o Save the Python script as read_serial.py.
 o Execute the script by running:
 bash
 Copy code
 python3 read_serial.py
-5. Connect Arduino to Raspberry Pi:
+# Connect Arduino to Raspberry Pi:
 o Connect the Arduino to the Raspberry Pi using a USB cable.
 
-5. Image
+#. Image
 
 Lab Manual IOT &amp; DA
 
-9 | Page
+# | Page
 
 Fig:-Arduino board connected to the LED
 
-6. Working
+# Working
 Arduino Operation:
 The Arduino code continuously toggles the LED on and off every second while sending serial
 messages (&quot;LED ON&quot; and &quot;LED OFF&quot;) to the connected serial port.
@@ -121,7 +101,7 @@ S
 No.
 Arduino Raspberry Pi
 
-1.
+#
 In the year 2005, the classrooms of
 the Interactive Design Institute in
 Ivrea, Italy, first introduced the
@@ -131,17 +111,17 @@ In the year 2012, Eben Upton first
 introduced the Raspberry Pi device in
 February.
 
-2. Control unit of the Arduino is from
+# Control unit of the Arduino is from
 the Atmega family.
 
 The control unit of Raspberry Pi is from the
 ARM family.
 
-3. Arduino is based on a microcontroller. While Raspberry Pi is based on a
+# Arduino is based on a microcontroller. While Raspberry Pi is based on a
 
 microprocessor.
 
-4.
+#
 It is designed to control the electrical
 components connected to the circuit
 board in a system.
@@ -151,7 +131,7 @@ produces valuable outputs, and controls
 components in a system based on the
 outcome of its computation.
 
-5. Arduino boards have a simple
+# Arduino boards have a simple
 hardware and software structure.
 
 While Raspberry Pi boards have a complex
@@ -159,35 +139,35 @@ architecture of hardware and software.
 
 Lab Manual IOT &amp; DA
 
-10 | Page
+# Page
 
-6. CPU architecture: 8 bit. CPU architecture: 64 bit.
+# CPU architecture: 8 bit. CPU architecture: 64 bit.
 
-7. It uses very little RAM, 2 kB. While Raspberry Pi requires more RAM, 1
+# It uses very little RAM, 2 kB. While Raspberry Pi requires more RAM, 1
 
 GB.
-8. It clocks a processing speed of 16
+# It clocks a processing speed of 16
 MHz.
 
 While Raspberry Pi clocks a processing
 speed of 1.4 GHz.
 
-9. It is cheaper in cost. While Raspberry Pi is expensive.
-10. It has a higher I/O current drive
+# It is cheaper in cost. While Raspberry Pi is expensive.
+#. It has a higher I/O current drive
 strength.
 
 While Raspberry Pi has a lower I/O current
 drive strength.
 
-11. It consumes about 200 MW of power. While it consumes about 700 MW of power.
-12. Its logic level is 5V. Its logic level is 3V.
-13. It does not have internet support. It has inbuilt Ethernet port and WiFi
+# It consumes about 200 MW of power. While it consumes about 700 MW of power.
+# Its logic level is 5V. Its logic level is 3V.
+# It does not have internet support. It has inbuilt Ethernet port and WiFi
 
 support.
 
-14. It has higher current drive strength. It has lower current drive strength.
+#. It has higher current drive strength. It has lower current drive strength.
 
-15.
+#
 Some of the applications of Arduino
 are traffic light countdown timer ,
 Weighing machines , etc.
@@ -196,13 +176,13 @@ Some of the applications of Raspberry Pi are
 Stop motion cameras , Robot Controllers ,
 Game Servers.
 
-16. Operating systems are required in
+# Operating systems are required in
 Arduino.
 
 Operating System is required in Raspberry
 Pi.
 
-7. Conclusion
+# Conclusion
 The lab exercise successfully demonstrated the basic operations of Arduino and Raspberry Pi, as
 well as how to establish serial communication between them. By completing this experiment,
 students gained practical experience in interfacing microcontrollers with single-board computers
