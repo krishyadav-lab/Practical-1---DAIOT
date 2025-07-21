@@ -17,6 +17,7 @@ Pi can communicate via serial ports, allowing data to be sent and received. This
 integrating sensor data or control signals between the two platforms.
 #Materials Required
 ~ Arduino Uno board
+
 ~Raspberry Pi (any model)
 ~ USB cable for Arduino
 ~ Breadboard
