@@ -24,9 +24,6 @@ integrating sensor data or control signals between the two platforms.
 ~Jumper wires
 ~ LED
 
-Lab Manual IOT &amp; DA
-
-# |Page
 
 ~ 220-ohm resistor
 ~ DHT11 Temperature and Humidity Sensor
@@ -54,37 +51,6 @@ Part 2: Raspberry Pi Setup
 ~ Install the pyserial library with:
 bash
 
-Lab Manual IOT &amp; DA
-
-#| Page
-
-Copy code
-sudo apt-get update
-sudo apt-get install python3-serial
-
-#Create Python Script:
-~Create a Python script to read the serial data from Arduino. Open a text editor and
-write the following script:
-python
-Copy code
-import serial
-# Open serial port
-
-# Run the Script:
-~ Save the Python script as read_serial.py.
-~ Execute the script by running:
-bash
-Copy code
-python3 read_serial.py
-# Connect Arduino to Raspberry Pi:
-o Connect the Arduino to the Raspberry Pi using a USB cable.
-
-#. Image
-
-Lab Manual IOT &amp; DA
-
-# | Page
-
 Fig:-Arduino board connected to the LED
 
 # Working
@@ -96,88 +62,100 @@ The Python script running on the Raspberry Pi reads the serial messages sent by 
 prints them to the terminal. This allows the Raspberry Pi to monitor the status of the LED on the
 Arduino.
 
-S
-No.
-Arduino Raspberry Pi
 
-#
+1 arduino:-
 In the year 2005, the classrooms of
 the Interactive Design Institute in
 Ivrea, Italy, first introduced the
 Arduino board.
-
+1. rasberry:-
 In the year 2012, Eben Upton first
 introduced the Raspberry Pi device in
 February.
-
-# Control unit of the Arduino is from
+2. arduino
+ Control unit of the Arduino is from
 the Atmega family.
-
+2. rasberry
 The control unit of Raspberry Pi is from the
 ARM family.
-
-# Arduino is based on a microcontroller. While Raspberry Pi is based on a
-
+3 .arduino
+ Arduino is based on a microcontroller.
+3.rasberry
+While Raspberry Pi is based on a
 microprocessor.
-
-#
+4.arduino
 It is designed to control the electrical
 components connected to the circuit
 board in a system.
-
+4. rasberry
 While Raspberry Pi computes data and
 produces valuable outputs, and controls
 components in a system based on the
 outcome of its computation.
-
-# Arduino boards have a simple
+5.arduino
+ Arduino boards have a simple
 hardware and software structure.
-
+5.rasberry
 While Raspberry Pi boards have a complex
 architecture of hardware and software.
 
-Lab Manual IOT &amp; DA
+6. arduino
+CPU architecture: 8 bit.
+6 rasberry
+ CPU architecture: 64 bit.
 
-# Page
+7.arduino
+It uses very little RAM, 2 kB.
+7.rasberry
+While Raspberry Pi requires more RAM, 1
 
-# CPU architecture: 8 bit. CPU architecture: 64 bit.
-
-# It uses very little RAM, 2 kB. While Raspberry Pi requires more RAM, 1
-
-GB.
-# It clocks a processing speed of 16
+8.arduino
+ It clocks a processing speed of 16
 MHz.
-
+8. rasberry
 While Raspberry Pi clocks a processing
 speed of 1.4 GHz.
 
-# It is cheaper in cost. While Raspberry Pi is expensive.
-#. It has a higher I/O current drive
+9 arduino
+It is cheaper in cost.
+9.rasberry
+While Raspberry Pi is expensive.
+10. arduino
+ It has a higher I/O current drive
 strength.
-
+10 . rasberry
 While Raspberry Pi has a lower I/O current
 drive strength.
-
-# It consumes about 200 MW of power. While it consumes about 700 MW of power.
-# Its logic level is 5V. Its logic level is 3V.
-# It does not have internet support. It has inbuilt Ethernet port and WiFi
-
+11 arduino
+It consumes about 200 MW of power.
+11 rasberry
+While it consumes about 700 MW of power.
+12. arduino
+ Its logic level is 5V. 
+ 12. rasberry
+ Its logic level is 3V.
+ 13 arduino
+ It does not have internet support
+ 13. rasberry
+ It has inbuilt Ethernet port and WiFi
 support.
 
-#. It has higher current drive strength. It has lower current drive strength.
-
-#
+14.arduino
+It has higher current drive strength.
+14.rasberry
+It has lower current drive strength.
+15 arduino
 Some of the applications of Arduino
 are traffic light countdown timer ,
 Weighing machines , etc.
-
+15 rasberry
 Some of the applications of Raspberry Pi are
 Stop motion cameras , Robot Controllers ,
 Game Servers.
-
-# Operating systems are required in
+16 arduino
+ Operating systems are required in
 Arduino.
-
+16 rasberry
 Operating System is required in Raspberry
 Pi.
 
